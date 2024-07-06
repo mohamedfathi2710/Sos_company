@@ -13,7 +13,7 @@
     transition: transform 0.2s;
     
   }
-  
+
   .service-card:hover {
     transform: translateY(-10px); 
   }
@@ -41,3 +41,21 @@
     margin-left: 20px; 
   }
   
+  @media (max-width: 850px){
+    .service-text {
+      font-size:1rem;
+      
+    }
+    .service-card{
+      flex-direction: column;
+    }
+    .service-card.reverse{
+      flex-direction: column;
+    }
+    .service-image{
+      margin-bottom: 10px;
+    }
+    .service-card.reverse .service-image{
+      margin-bottom: 10px;
+    }
+  }

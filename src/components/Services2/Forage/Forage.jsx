@@ -5,7 +5,7 @@ import forage from '../../../assets/forage.avif'
 const Maintenance = () => {
   return (
     <div className='maintenance'>
-      <div className="left-container">
+      <div className="forage-left-container">
         <img src={forage} alt="Maintenance Image" />
       </div>
       <div className="forage-right-container">

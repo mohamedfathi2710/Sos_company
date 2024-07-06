@@ -5,7 +5,7 @@ import transport from '../../../assets/transport.jpg'
 const Maintenance = () => {
   return (
     <div className='maintenance'>
-      <div className="left-container">
+      <div className="tr-left-container">
         <h2>SOS Transport</h2>
         <p>
         SOS BTP est une filière de la société Groupe SOS, spécialisée dans le bâtiment, les travaux publics et la construction de stations-services. Forte de son expérience et de son savoir-faire, SOS BTP s'est imposée comme un acteur incontournable dans le secteur de la construction en Guinée. Nous nous engageons à offrir des solutions de construction de haute qualité, adaptées aux besoins spécifiques de nos clients.
@@ -18,7 +18,7 @@ const Maintenance = () => {
         </p>
         
       </div>
-      <div className="right-container">
+      <div className="tr-right-container">
         <img src={transport} alt="Maintenance Image" />
       </div>
     </div>

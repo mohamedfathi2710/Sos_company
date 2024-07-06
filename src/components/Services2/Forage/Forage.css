@@ -31,25 +31,25 @@
     line-height: 1.5;
   }
   
-  .left-container {
+  .forage-left-container {
     flex: 1;
     width: 100%;
     height: 100%;
     padding: 0;
   }
   
-  .left-container img {
+  .forage-left-container img {
     width: 100%;
     height: 100%;
   }
   
   @media (max-width: 850px) {
-    .left-container{
+    .forage-left-container{
       display: none;
     }
   }
   @media (max-width: 479px) {
-    .left-container{
+    .forage-left-container{
       display: none;
     }
     .forage-right-container h2{
