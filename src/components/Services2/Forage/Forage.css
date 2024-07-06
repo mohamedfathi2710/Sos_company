@@ -44,12 +44,12 @@
   }
   
   @media (max-width: 850px) {
-    .forage-left-container{
+    .left-container{
       display: none;
     }
   }
   @media (max-width: 479px) {
-    .forage-left-container{
+    .left-container{
       display: none;
     }
     .forage-right-container h2{
