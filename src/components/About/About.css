@@ -11,6 +11,7 @@
 }
 .about-right{
     flex-basis: 56%;
+    z-index: -1;
 }
 .about-img{
     width: 100%;

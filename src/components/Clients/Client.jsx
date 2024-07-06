@@ -25,7 +25,7 @@ const Engagement = () => {
   return (
     <div className='clients' id="client">
       {engagements.map((engagement, index) => (
-        <div key={index} className='client-card' data-aos="fade-up">
+        <div key={index} className='client-card' data-aos="fade-up" data-aos-duration="1000">
           <img src={engagement.icon} alt={engagement.text} className='icon' />
         </div>
       ))}
