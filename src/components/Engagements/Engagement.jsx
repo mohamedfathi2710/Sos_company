@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Engagement.css';
-
-// Engagement icons (replace these with your actual icons)
 import { FaHandsHelping, FaClock, FaShieldAlt, FaThumbsUp } from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const engagements = [
   { icon: <FaHandsHelping />, text: `La mise à disposition d'une équipe d'intervention hautement qualifiée 24h/7 j` },
@@ -12,10 +12,14 @@ const engagements = [
 ];
 
 const Engagement = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className='engagements' id='engagement'>
       {engagements.map((engagement, index) => (
-        <div key={index} className='engagement-card'>
+        <div key={index} className='engagement-card' data-aos="zoom-in">
           <div className='icon'>{engagement.icon}</div>
           <div className='text'>{engagement.text}</div>
         </div>

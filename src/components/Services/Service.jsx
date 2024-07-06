@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Service.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 // Import local icons or images (replace these with your actual images)
 import image1 from '../../assets/transport.jpg'; 
@@ -18,12 +20,16 @@ const services = [
 ];
 
 const Service = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className='services' id='services'>
       {services.map((service, index) => (
-        <div key={index} className={`service-card ${service.reverse ? 'reverse' : ''}`}>
+        <div key={index} className={`service-card ${service.reverse ? 'reverse' : ''}`} data-aos={service.reverse ? 'fade-up' : 'fade-down'}>
           <img src={service.image} alt='Service' className='service-image' />
-          <div className='service-text'  >{service.text}</div>
+          <div className='service-text' dangerouslySetInnerHTML={{ __html: service.text }}></div>
         </div>
       ))}
     </div>
