@@ -43,3 +43,19 @@
     height: 100%;
   }
   
+  @media (max-width: 850px) {
+    .forage-right-container{
+      display: none;
+    }
+  }
+  @media (max-width: 479px) {
+    .forage-right-container{
+      display: none;
+    }
+    .forage-left-container h2{
+      font-size: 25px;
+    }
+    .forage-left-container p{
+      font-size: 13px;
+    }
+  }

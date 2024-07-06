@@ -42,3 +42,19 @@
     height: 100%;
   }
   
+  @media (max-width: 850px) {
+    .t-right-container{
+      display: none;
+    }
+  }
+  @media (max-width: 479px) {
+    .t-right-container{
+      display: none;
+    }
+    .t-left-container h2{
+      font-size: 25px;
+    }
+    .t-left-container p{
+      font-size: 13px;
+    }
+  }
