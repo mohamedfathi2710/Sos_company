@@ -1,43 +1,42 @@
 .engagements {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .engagement-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.2s; 
-    z-index: -1;
-  }
-  
-  .engagement-card:hover {
-    transform: translateY(-10px); 
-  }
-  
-  .icon {
-    font-size: 2rem; 
-    margin-bottom: 10px;
-    color: #007BFF; 
-  }
-  
-  .text {
-    font-size: 1.2rem; 
-    color: #333; 
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
 
-  @media (max-width: 650px) {
-    .engagements{
-      flex-direction: column;
-    }
-    
+.engagement-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s; 
+  z-index: -1;
+}
+
+.engagement-card:hover {
+  transform: translateY(-10px); 
+}
+
+.icon {
+  font-size: 2rem; 
+  margin-bottom: 10px;
+  color: #007BFF; 
+}
+
+.text {
+  font-size: 1.2rem; 
+  color: #333; 
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+  .engagements {
+    grid-template-columns: 1fr; /* One column layout for smaller screens */
   }
+}
