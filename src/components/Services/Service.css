@@ -1,0 +1,43 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .service-card {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s;
+    
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px); 
+  }
+  
+  .service-image {
+    width: 200px; 
+    height: 200px; 
+    margin-right: 20px;
+    border-radius: 18px;
+  }
+  
+  .service-text {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333; 
+  }
+  
+  /* Reverse the order of image and text for reverse cards */
+  .service-card.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .service-card.reverse .service-image {
+    margin-right: 0;
+    margin-left: 20px; 
+  }
+  
