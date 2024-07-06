@@ -44,18 +44,18 @@
   }
   
   @media (max-width: 850px) {
-    .forage-right-container{
+    .forage-left-container{
       display: none;
     }
   }
   @media (max-width: 479px) {
-    .forage-right-container{
+    .forage-left-container{
       display: none;
     }
-    .forage-left-container h2{
+    .forage-right-container h2{
       font-size: 25px;
     }
-    .forage-left-container p{
+    .forage-right-container p{
       font-size: 13px;
     }
   }

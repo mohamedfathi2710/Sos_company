@@ -43,18 +43,18 @@
   }
   
   @media (max-width: 850px) {
-    .t-right-container{
+    .t-left-container{
       display: none;
     }
   }
   @media (max-width: 479px) {
-    .t-right-container{
+    .t-left-container{
       display: none;
     }
-    .t-left-container h2{
+    .t-right-container h2{
       font-size: 25px;
     }
-    .t-left-container p{
+    .t-right-container p{
       font-size: 13px;
     }
   }
