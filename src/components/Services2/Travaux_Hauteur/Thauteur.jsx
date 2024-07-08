@@ -11,15 +11,8 @@ const Maintenance = () => {
       <div className="t-right-container">
       <h2>Travaux en hauteur</h2>
         <p>
-        SOS Forage est le spécialiste incontesté en Guinée du forage et du minage, reconnu pour son expertise et son engagement envers l'excellence. Avec des années d'expérience et une équipe hautement qualifiée, SOS Forage vous garantit non seulement l'exploitation efficace de vos carrières et terrassements, mais aussi leur valorisation optimale. Nous mettons un point d'honneur à maximiser la rentabilité et la productivité de vos projets grâce à des solutions de pointe adaptées à vos besoins spécifiques.
+        SOS Travaux en Hauteur se spécialise dans la réalisation de tout type de travaux en hauteur. Nos équipes d'experts possèdent le plus haut niveau de compétence et de qualification requis pour exécuter ces travaux avec précision et sécurité. Nous mettons un point d'honneur à garantir la sécurité absolue de chaque intervention. Chaque membre de notre équipe est formé aux dernières normes de sécurité et est équipé des outils les plus avancés pour assurer des résultats impeccables tout en minimisant les risques. Chez SOS Travaux en Hauteur, nous nous engageons à fournir des solutions efficaces et sûres, répondant aux plus hauts standards de qualité et de fiabilité.
         </p>
-        <p>
-        Nos services couvrent une large gamme de techniques de forage et de minage, conçues pour s'adapter aux différentes conditions géologiques et aux exigences de chaque chantier. Que ce soit pour des petits projets de terrassement ou des exploitations à grande échelle, nous disposons des équipements les plus modernes et des méthodes les plus innovantes pour garantir des résultats exceptionnels.
-        </p>
-        <p>
-        En plus de notre expertise technique, nous sommes dédiés à offrir un service client irréprochable. Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins et développer des solutions sur mesure qui assurent la réussite de leurs projets. Notre équipe de spécialistes est toujours disponible pour fournir des conseils et un soutien technique, assurant que chaque projet est mené à bien avec efficacité et professionnalisme.
-        </p>
-
       </div>
     </div>
   );
