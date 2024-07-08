@@ -80,8 +80,9 @@
     order: 2;
   }
 
-  .about-img, .owner-img {
+  .about-img {
     max-height: 300px; 
+    z-index: -10;
   }
 }
 
@@ -125,7 +126,8 @@
     order: 2;
   }
 
-  .about-img, .owner-img {
+  .about-img {
     max-height: 300px; 
+    z-index: -10;
   }
 }
