@@ -1,9 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* customScrollbar.css */
+html, body {
+  overflow-x: hidden;
+}
 
-/* Vertical Scrollbar */
 body::-webkit-scrollbar {
   width: 10px; /* Width of the vertical scrollbar */
   height: 2px; /* Height of the horizontal scrollbar */

@@ -62,7 +62,9 @@
 
 @media (max-width: 850px) {
     .contact{
-        flex-direction: column;
+        display: block;
     }
-
+    .contact-col{
+        padding: 20px;
+    }
 }

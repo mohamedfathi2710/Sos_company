@@ -6,8 +6,8 @@ import 'aos/dist/aos.css';
 
 const engagements = [
   { icon: <FaHandsHelping />, text: `La mise à disposition d'une équipe d'intervention hautement qualifiée 24h/7 j` },
-  { icon: <FaClock />, text: `La garantie et la qualité du travail (pièces de recharge d'origine)` },
-  { icon: <FaShieldAlt />, text: 'Le respect des délais de réparation' },
+  { icon: <FaShieldAlt />, text: `La garantie et la qualité du travail (pièces de recharge d'origine)` },
+  { icon: <FaClock />, text: 'Le respect des délais de réparation' },
   { icon: <FaThumbsUp />, text: 'Le recrutement des meilleurs éléments de terrain (ingénieurs, techniciens, mécaniciens) en mécanique générale et en électricité' },
 ];
 
