@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Nos compétences au service de l'Afrique</h1>
         <p>Maintenace mécanique & électrique - Forage - BTP - Travaux en hauteur - Transport</p>
-        <button className='btn'>Explore more ➡️</button>
+        <button className='btn'><Link to='about' smooth={true} offset={-150} duration={500} className='btn'>Explore more ➡️</Link></button>
       </div>
     </div>
   )

@@ -37,11 +37,11 @@ const Contact = () => {
     <div className='contact' id='contact'>
       <div className="contact-col">
         <h3>Envoyez-nous un message <img src={msg_icon} alt="" /></h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quos, consequuntur fugiat laudantium facere assumenda nulla necessitatibus quia, labore debitis culpa quibusdam iusto sunt excepturi obcaecati. Aperiam excepturi rerum voluptatum.</p>
+        <p>Nous sommes là pour répondre à vos questions, discuter de vos projets ou vous fournir toute l'assistance nécessaire. N'hésitez pas à nous contacter pour toute demande d'information supplémentaire. Nous attendons avec impatience de vous aider à trouver des solutions adaptées à vos besoins.</p>
         <ul>
             <li><img src={mail_icon} alt="" />Contact@gmail.com</li>
-            <li><img src={phone_icon} alt="" />+22845879654</li>
-            <li><img src={adresse_icon} alt="" />adresse</li>
+            <li><img src={phone_icon} alt="" />+228 666-852337</li>
+            <li><img src={adresse_icon} alt="" />Route du countournement, Attiégou</li>
         </ul>
       </div>
       <div className="contact-col">
