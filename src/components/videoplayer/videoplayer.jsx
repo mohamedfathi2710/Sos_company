@@ -8,7 +8,7 @@ function videoplayer({playState, setPlayState}) {
 
     const closePlayer = (e) => {
         if(e.target === player.current){
-            setPlayState(false);
+            setPlayState(false)
         }
     }
 

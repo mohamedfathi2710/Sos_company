@@ -46,6 +46,9 @@ nav ul li{
     nav{
         padding: 15px 0;
         z-index: 100;
+        position: fixed; /* Add this line */
+        top: 0; /* Ensure it sticks to the top */
+        left: 0; /* Ensure it sticks to the left */
     }
     nav ul{
         position: fixed;
