@@ -41,6 +41,11 @@
     .hero-text h1{
         font-size: 40px;
     }
+    .hero-text{
+        text-align: center;
+        max-width: 800px;
+        margin-top: 261px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -52,5 +57,10 @@
     .hero-text p{
         font-size: 14px;
         margin: 15px auto 30px;
+    }
+    .hero-text{
+        text-align: center;
+        max-width: 800px;
+        margin-top: 261px;
     }
 }

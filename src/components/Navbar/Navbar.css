@@ -12,7 +12,7 @@ nav.container {
 }
 
 nav.sticky-nav {
-    background-color: #22508e; 
+    background-color: #2a629a; 
 }
 
 .logo {
@@ -52,13 +52,14 @@ nav ul li {
         position: fixed; 
         top: 0; 
         left: 0; 
+        padding-right: 18px;
     }
     nav ul {
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
-        background: #22508e;
+        background: #2a629a;
         z-index: 0;
         width: 210px;
         padding-top: 70px;
