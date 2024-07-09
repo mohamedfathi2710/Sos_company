@@ -39,7 +39,7 @@ const App = () => {
         <Thauteur/>
         <Transport/>
         <div className="container">
-        <Title subTitle='contact US' title='Get in Touch'/>
+        <Title subTitle='Contactez-nous' title='Get in Touch'/>
         <Contact/>
         </div>
         <Videoplayer playState={playState} setPlayState={setPlayState}/>

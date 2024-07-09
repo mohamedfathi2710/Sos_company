@@ -36,23 +36,23 @@ const Contact = () => {
   return (
     <div className='contact' id='contact'>
       <div className="contact-col">
-        <h3>Envoyez-nous un message <img src={msg_icon} alt="" /></h3>
+        <h3>Envoyez-nous un message <img src={msg_icon} /></h3>
         <p>Nous sommes là pour répondre à vos questions, discuter de vos projets ou vous fournir toute l'assistance nécessaire. N'hésitez pas à nous contacter pour toute demande d'information supplémentaire. Nous attendons avec impatience de vous aider à trouver des solutions adaptées à vos besoins.</p>
         <ul>
-            <li><img src={mail_icon} alt="" />Contact@gmail.com</li>
-            <li><img src={phone_icon} alt="" />+228 666-852337</li>
-            <li><img src={adresse_icon} alt="" />Route du countournement, Attiégou</li>
+            <li><img src={mail_icon} />Contact@gmail.com</li>
+            <li><img src={phone_icon} />+228 666-852337</li>
+            <li><img src={adresse_icon} />Route du countournement, Attiégou</li>
         </ul>
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
-            <label>Your Name</label>
-            <input type="text" name='name' placeholder='Enter Your Name' required/>
-            <label>Phone Number</label>
-            <input type="tel" name='phone' placeholder='Enter Your mobile number' required/>
-            <label>Write your messages here</label>
-            <textarea name="message" rows="6" placeholder='Enter Your Message' required></textarea>
-            <button type='submit' className='btn dark-btn'>Submit Now <img src={right_arrow} alt="" /></button>
+            <label>Votre Nom</label>
+            <input type="text" name='name' placeholder='Entrez votre nom' required/>
+            <label>Numéro de téléphone</label>
+            <input type="tel" name='phone' placeholder='Entrez votre Numéro de téléphone' required/>
+            <label>Écrivez vos messages ici</label>
+            <textarea name="message" rows="6" placeholder='Écrivez vos messages' required></textarea>
+            <button type='submit' className='btn dark-btn'>Envoyer <img src={right_arrow} alt="" /></button>
         </form>
         <span>{result}</span>
       </div>

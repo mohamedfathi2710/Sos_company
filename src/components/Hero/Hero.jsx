@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Nos compétences au service de l'Afrique</h1>
         <p>Maintenace mécanique & électrique - Forage - BTP - Travaux en hauteur - Transport</p>
-        <button className='btn'><Link to='about' smooth={true} offset={-150} duration={500} className='btn'>Explore more ➡️</Link></button>
+        <button className='btn'><Link to='about' smooth={true} offset={-150} duration={500} className='btn'>Découvrez plus ➡️</Link></button>
       </div>
     </div>
   )
