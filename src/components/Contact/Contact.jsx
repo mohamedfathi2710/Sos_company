@@ -40,7 +40,7 @@ const Contact = () => {
         <p>Nous sommes là pour répondre à vos questions, discuter de vos projets ou vous fournir toute l'assistance nécessaire. N'hésitez pas à nous contacter pour toute demande d'information supplémentaire. Nous attendons avec impatience de vous aider à trouver des solutions adaptées à vos besoins.</p>
         <ul>
             <li><img src={mail_icon} />Contact@gmail.com</li>
-            <li><img src={phone_icon} />+228 99 29 6363</li>
+            <li><img src={phone_icon} />+228 99 29 6363 <br/> +228 99 25 2323</li>
             <li><img src={adresse_icon} />Route du countournement, Attiégou</li>
         </ul>
       </div>
