@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import './videoplayer.css'
-import tarikvideo from '../../assets/TarikFadil.mp4'
+import tarikvideo from '../../assets/TarikFadil-BbesLFMb.mp4'
 
 function videoplayer({playState, setPlayState}) {
 
