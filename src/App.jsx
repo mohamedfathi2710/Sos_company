@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import 'leaflet/dist/leaflet.css';
 
 
 import Navbar from './components/Navbar/Navbar';
@@ -13,6 +14,7 @@ import BTP from './components/Services2/BTP/btp';
 import Thauteur from './components/Services2/Travaux_Hauteur/Thauteur';
 import Transport from './components/Services2/Transport/transport';
 import Contact from './components/Contact/Contact';
+import Location from './components/Location/location'
 import Engagement from './components/Engagements/Engagement';
 import Client from './components/Clients/Client';
 import Videoplayer from './components/videoplayer/videoplayer';
@@ -47,6 +49,10 @@ const AppContent = () => {
               <Services />
             </div>
             <Thauteur />
+            <div className="container">
+              <Title subTitle="" title="Retrouvez-nous dans le monde" />
+              <Location />
+            </div>
             <Transport />
             <div className="container">
               <Title subTitle="Contactez-nous" title="Get in Touch" />

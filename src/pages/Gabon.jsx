@@ -10,7 +10,7 @@ import image3 from '../assets/tarikGabon3.jpg';
 import image4 from '../assets/tarikGabon4.jpg'; 
 import image5 from '../assets/image 5.jpg';
 import image6 from '../assets/image 6.jpg';
-import overlayImage from '../assets/logo3-bg.png';
+import overlayImage from '../assets/logo4.png';
 import './Gabon.css';
 
 const EbomafProject = () => {
@@ -39,7 +39,6 @@ const EbomafProject = () => {
     }
   ];
   
-
   const handleOverlayClick = () => {
     window.history.back();
   };
@@ -58,52 +57,71 @@ const EbomafProject = () => {
                     alt={item.title}
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
-                  <Box
-                    sx={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      width: '100%',
-                      height: '100%',
-                      backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      textAlign: 'center',
-                      padding: '20px',
-                    }}
-                  >
-                    <Typography
-                      variant="h1"
-                      fontFamily='Anton'
-                      className='title-font'
-                      fontWeight='400'
-                      gutterBottom
-                      sx={{ color: 'white', mb: 2, textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',textTransform: 'uppercase' }}
-                      dangerouslySetInnerHTML={{ __html: item.title }} // Render HTML content
-                    />
-                    <Typography variant="h5" fontFamily='Poppins' fontWeight='400' sx={{ color: 'white' }}>{item.description}</Typography>
-                  </Box>
+<Box
+  sx={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    padding: '20px',
+  }}
+>
+  <Typography
+    variant="h1"
+    fontFamily="Anton"
+    className="title-font"
+    fontWeight="400"
+    gutterBottom
+    sx={{
+      color: 'white',
+      mb: 2,
+      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
+      textTransform: 'uppercase',
+      fontSize: {
+        xs: '2.2rem',  // Small screen (mobile)
+        sm: '2.8rem',  // Medium screen (tablet)
+        md: '3.8rem',  // Large screen (desktop)
+        lg: '4.8rem',  // Extra-large screen
+      },
+    }}
+    dangerouslySetInnerHTML={{ __html: item.title }} // Render HTML content
+  />
+  <Typography
+    variant="h5"
+    fontFamily="Poppins"
+    fontWeight="400"
+    sx={{
+      color: 'white',
+      fontSize: {
+        xs: '0.8rem', // Small screen (mobile)
+        sm: '1rem',   // Medium screen (tablet)
+        md: '1.2rem', // Large screen (desktop)
+        lg: '1.5rem', // Extra-large screen
+      },
+    }}
+  >
+    {item.description}
+  </Typography>
+</Box>
+
                 </Box>
                 {/* Optional overlay image */}
                 <div
                   className="carousel-overlay"
                   onClick={handleOverlayClick}
-                  style={{
-                    position: 'absolute',
-                    top: '20px',
-                    right: '20px',
-                    backgroundColor: 'rgb(255,255,255)',
-                    borderRadius: '8px',
-                    padding: '10px',
-                    cursor: 'pointer'
-                  }}
+                  
                 >
                   <img
                     src={overlayImage}
                     alt="Overlay"
-                    style={{ display: 'block', width: '150px', height: 'auto' }}
+                    style={{ display: 'block', width: '200px', height: 'auto', cursor: 'pointer' }}
                   />
                 </div>
               </Paper>
@@ -168,14 +186,14 @@ const EbomafProject = () => {
               <strong>Notre équipe</strong>Notre équipe de maintenance hautement qualifiée est disponible 24h/24 et 7j/7 pour s'assurer que toutes les machines et véhicules fonctionnent à pleine capacité, réduisant ainsi les temps d'arrêt et garantissant le bon déroulement du projet.<br/><br/>
               <strong>Nous comprenons</strong>Nous comprenons que, dans les projets d'infrastructure de grande envergure, une panne imprévue peut entraîner des retards considérables, c'est pourquoi nous nous engageons à fournir des services de maintenance préventive et d'intervention rapide.<br/><br/>
               <strong>Nos techniciens</strong>Nos techniciens effectuent des inspections régulières, des entretiens programmés, et utilisent des outils de diagnostic avancés pour détecter les problèmes potentiels avant qu'ils ne surviennent. De plus, notre équipe est équipée des outils les plus récents et des pièces de rechange nécessaires pour effectuer les réparations sur place, assurant ainsi une perturbation minimale du flux de travail.<br/><br/>
-              <strong>Avec un soutien</strong>Avec un soutien technique constant et une gestion proactive des équipements, nous veillons à ce que le projet se poursuive sans interruption et dans les délais prévus.
+              <strong>Avec un soutien</strong>Avec un soutien technique constant et une gestion efficace, nous jouons un rôle essentiel dans la réussite du projet Ebomaf BTP Gabon en garantissant la fiabilité et la longévité des équipements utilisés.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6} data-aos="fade-right" className="fade-right" data-aos-duration="1000">
             <img
-              src={image3}
+              src={image6}
               alt="Maintenance and Support"
-              style={{ width: '100%', height: '550px', borderRadius: '8px' }}
+              style={{ width: '100%', height: '400px', borderRadius: '8px' }}
             />
           </Grid>
         </Grid>
