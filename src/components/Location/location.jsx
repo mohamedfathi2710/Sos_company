@@ -4,7 +4,6 @@ import './Location.css';
 
 const countries = [
   { name: 'Lome', country: 'Togo', latitude: 6.1319, longitude: 1.2220, blogPath: '#' },
-  //{ name: 'Porto-Novo', country: 'Benin', latitude: 6.4969, longitude: 2.6289, blogPath: '#' },
   { name: 'Ouagadougou', country: 'Burkina Faso', latitude: 12.3686, longitude: -1.5275, blogPath: '#' },
   { name: 'Libreville', country: 'Gabon', latitude: 0.4162, longitude: 9.4673, blogPath: '/blog' }
 ];
@@ -18,7 +17,7 @@ const Location = () => {
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
         .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
         .backgroundColor('rgba(0, 0, 0, 0)') // Transparent background
-        .pointOfView({ lat: 0, lng: 0, altitude: 1.5 });
+        .pointOfView({ lat: 0, lng: 0, altitude: getGlobeAltitude() });
 
       globe
         .labelsData(countries)
@@ -34,9 +33,20 @@ const Location = () => {
     }
   }, []);
 
+  const getGlobeAltitude = () => {
+    // Change altitude based on viewport width
+    const width = window.innerWidth;
+    if (width < 480) {
+      return 4; // Altitude for mobile
+    } else if (width < 768) {
+      return 1.5; // Altitude for tablets
+    } else {
+      return 2; // Altitude for desktops
+    }
+  };
+
   return (
     <div className="location-container">
-     
       <div className="globe-container" ref={globeRef}></div>
     </div>
   );
